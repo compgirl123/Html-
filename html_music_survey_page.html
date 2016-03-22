@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Music Lover's Survey </title>
+		<meta charset = "UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="Question_4_forms.CSS">
+		<style>
+            
+        body 
+        {
+            background-color :#FFFF99;
+        }
+        
+        legend.music_lover_info
+        {
+             font-weight: bold;   
+        }
+        
+        legend.survey_questions
+        {
+             font-weight:bold;
+        }
+		fieldset.information legend
+		{
+			color: #000066;
+			
+		}
+		fieldset.survey legend
+		{
+			color: #CC0000;
+		}
+		fieldset.information
+		{
+			border-style: solid;
+			border-color : #000066;
+			background-color: #9999FF;
+			
+		}
+		fieldset.survey
+		{
+			border-style: solid;
+			border-color : #CC0000;
+			background-color: #FF9999;
+			
+		}
+		p.info
+		{
+		font-weight:bold;
+		}
+		
+
+	</style>
+	</head>
+	
+    <body>
+	   <h1> 
+             Music Lover's Survey 
+               <a href="http://images.clipartpanda.com/music-notes-on-staff-clipart-dT6XGz8T9.jpeg"> 
+                   <img src = "http://images.clipartpanda.com/music-notes-on-staff-clipart-dT6XGz8T9.jpeg" alt="Music note" style="width:200px;height:80;">
+               </a>
+            
+        </h1>
+	
+<form>
+    <fieldset class = "information">
+       
+        <legend class ="music_lover_info">
+            Music Lover's Personal Information
+        </legend>
+	
+   
+	<p class ="info">
+	     First Name
+	    <input type = "text"  name = "first name" id="firstname" size = "25" />
+	</p>
+	
+	
+	
+	<p class ="info">
+	     Family Name 
+	     <input type = "text" name = "family name" id="familyname" size = "25" />
+	</p>
+	
+	
+	
+	<p>
+	    <b> Gender : </b>
+	     <label><input type = "radio"  name = "Gender" id="female" value = "Female" />
+	     Female </label>
+	     <label><input type = "radio" name = "Gender" id="male" value = "Male" /> 
+	     Male </label>
+	</p>
+	
+	
+	
+	<p class = "info">
+	     What age category are you from? 
+	     <select name = "age category">
+	          <option> Less than 18 yrs old</option>
+	          <option> 18-24 yrs old </option>
+                  <option> 25-34 yrs old </option>
+                  <option> 35-44 yrs old </option>
+                  <option> 45-54 yrs old </option>
+                  <option> 55-64 yrs old </option>
+                  <option> 65-74 yrs old </option>
+                  <option> 75 yrs or older </option>
+	      </select>
+	</p>
+
+	<p class ="info">
+	     Email
+	      <input type = "text"  name = "email address"  id=emailaddress size = "25" maxlength = "100"/>  
+	</p>
+	
+	</fieldset>
+	
+	<br/>
+	
+	<fieldset class = "survey">
+	<legend class = "survey_questions">Survey Questions</legend>
+	
+
+	
+	<p class ="info"> Which type of music do you listen to?(Pick as many as apply)</p> 
+	
+		<label> <input type = "checkbox" name = "music genres" id="Blues" value = "Blues" /> Blues </label>
+		<label> <input type = "checkbox" name = "music genres" id="Classicalmusic" value = "Classical music" /> Classical music </label>
+		<label> <input type = "checkbox" name = "music genres" id="ElectronicMusic" value = "Electronic Music" /> Electronic music </label>
+	<br/>
+	        <label> <input type = "checkbox" name = "music genres" id="HipHop/Rap" value = "Hip Hop/Rap" /> Hip Hop/Rap </label>
+	        <label> <input type = "checkbox" name = "music genres" id="PopPopularMusic" value = "Pop (Popular Music)" /> Pop (Popular Music) </label>
+	        <label> <input type = "checkbox" name = "music genres" id="Reggae" value = "Reggae" /> Reggae </label>
+	<br/>
+	        <label> <input type = "checkbox" name = "music genres" id="Other" value = "Other" /> Other </label>  
+	 <br/>
+	     
+	 <p class ="info"> List your 3 favorite artist/bands: </p>
+	 
+	 	 <input type = "text"  name = "name of first artist/bands" id="nameoffirstartist/bands" size = "25" maxlength = "100"/>  
+	 	 <input type = "text"  name = "name of second artist/bands" id="nameofsecondartist/bands" size = "25" maxlength = "100"/>  
+	 	 <input type = "text"  name = "name of third artist/bands" id="nameofthirdartist/bands" size = "25" maxlength = "100"/> 
+	
+	
+	<p class ="info">
+	If you were to win tickets which show would you like 2 tickets to? 
+	</p>
+	<p>
+	         <label><input type = "radio"  name = "Artists" id="BRITFLOYDMarch242016" value = "BRIT FLOYD (March 24, 2016)" />BRIT FLOYD (March 24,2016) </label>
+	         <label><input type = "radio"  name =  "Artists" id="IRONMAIDENApril12016" value = "IRON MAIDEN (April 1, 2016)" />IRON MAIDEN (April 1,2016)</label> 
+	         <label><input type = "radio"  name =  "Artists" id="JANETJACKSONJune172016" value = "JANET JACKSON (June 17, 2016)" />JANET JACKSON (June 17, 2016)</label>  
+	         <label><input type = "radio"  name =  "Artists" id="ADELESeptember302016" value = "ADELE (September 30, 2016)" />ADELE (September 30, 2016)</label>  
+	 </p>
+    </fieldset>
+	 <br/>
+	 <br/>
+	 
+	        Thank you for taking the time to fill out our survey!
+	 <br/>
+	 <br/>
+	        <input type = "submit" value = "Submit" />
+	        <input type = "reset" value = "Reset"/>
+
+    </form>
+	</body>
+	</html>
